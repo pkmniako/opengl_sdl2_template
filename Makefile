@@ -18,7 +18,7 @@ main.exe:	$(OBJ_FILES)
 	g++ -o $@ $^ $(OPENGLFLAGS) $(STATICFLAGS)
 
 $(OBJ_DIR)/%.o:	$(SRC_DIR)/%.cpp
-	mkdir -p $(@D)
+	@mkdir -p $(@D)
 	g++ $(CPPFLAGS) $(CXXFLAGS) -c -o $@ $<
 
 clear:
