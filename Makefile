@@ -6,7 +6,7 @@ LDFLAGS :=
 CPPFLAGS := -std=c++17
 CXXFLAGS := -Iinclude
 TERMINALLESS := -Wl,--subsystem,windows
-OPENGLFLAGS := -L"lib/mingw/x64" -lmingw32 -lSDL2main -lSDL2 -lkernel32 -ladvapi32 -lgdi32 -limm32 -lmsvcrt -lole32 -loleaut32 -lsetupapi -lshell32 -luser32 -lversion -lwinmm #$(TERMINALLESS)
+OPENGLFLAGS := -L"lib/mingw/x64" -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lkernel32 -ladvapi32 -lgdi32 -limm32 -lmsvcrt -lole32 -loleaut32 -lsetupapi -lshell32 -luser32 -lversion -lwinmm #$(TERMINALLESS)
 STATICFLAGS := -static-libgcc -static-libstdc++ -static
 SDLLIBS=`sdl2-config --libs`
 
